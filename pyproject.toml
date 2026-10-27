@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fipoyeylos-numverify"
+version = "0.1.0"
+description = "提取问答两侧的数值，比对单位、量级与算术关系，标出对不上的答案"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "fipoyeylos" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://fipoyeylos.github.io"
+Repository = "https://github.com/fipoyeylos/numverify"
+Issues = "https://github.com/fipoyeylos/numverify/issues"
+
+[project.scripts]
+numverify = "numverify:main"
+
+[tool.setuptools]
+py-modules = ["numverify"]
